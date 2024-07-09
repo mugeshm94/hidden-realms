@@ -282,7 +282,7 @@ scene("main", async (levelIdx) => {
   });
 
   player.onCollide("portal", () => {
-    if (collectedKeys >= 1) {
+    if (collectedKeys >= 5) {
       if (levelIdx + 1 < levels.length) {
         play("portalsound");
         go("main", levelIdx + 1);
